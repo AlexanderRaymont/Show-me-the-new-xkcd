@@ -16,7 +16,7 @@ class Main():
     def findComicNumber(self):
         f = open('Data.txt').read()
         dat = f.split('\n')
-        dat = int(dat[0])
+        dat = int(dat[0])+1
         hasFound= False
         while(not hasFound):
             #print(requests.get(self.base + str(dat) +'/') )
